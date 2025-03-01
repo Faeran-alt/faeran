@@ -1,0 +1,11 @@
+/**
+{
+    "livePreview.defaultPreviewPath": "/index.html"
+}
+**/
+{
+    "liveServer.settings.NoBrowser": false,
+    "liveServer.settings.port": 0,
+    "liveServer.settings.root": "/public",
+    "liveServer.settings.showOnStatusBar": true
+}
