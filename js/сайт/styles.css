@@ -15,14 +15,14 @@ body, html {
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 21px 0;
-    font-size: 25px;
+    padding: 10px 0;
+    font-size: 16px;
 }
 
 .header {
     background-color: #f4f4f4;
     width: 100%;
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;
     position: relative;
@@ -35,27 +35,27 @@ body, html {
 }
 
 .header .logo-image {
-    width: 50px;
-    height: 50px;
+    width: 110px;
+    height: 110px;
     background-color: #4B2612;
-    margin-right: 38px;
+    position: absolute;
+    left: 151px;
 }
 
 .header .logo {
-    font-size: 25px;
+    font-size: 22px;
     font-family: 'PT Serif Caption', serif;
     color: #4B2612;
     position: absolute;
     left: 239px;
+    z-index: 1;
 }
 
 .header .city {
-    font-size: 20px;
+    font-size: 16px;
     color: #000;
     display: flex;
     align-items: center;
-    position: absolute;
-    left: 439px;
 }
 
 .header .tumen {
@@ -63,52 +63,34 @@ body, html {
 }
 
 .header .search {
-    width: 350px;
-    height: 54px;
+    width: 300px;
+    height: 40px;
     background-color: #e7e7e7;
     border: 1px solid #ccc;
-    border-radius: 100px;
-    padding: 0 20px;
-    font-size: 20px;
-    outline: none;
-    position: absolute;
-    left: 1055px;
+    border-radius: 20px;
+    padding: 0 15px;
+    font-size: 16px;
 }
 
 .header .search::placeholder {
     color: #999;
 }
 
-.header .tema {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: #4C3527;
-    position: absolute;
-    left: 1444px;
-}
-
+.header .tema,
 .header .akaynt {
-    width: 44px;
-    height: 44px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
     background-color: #4C3527;
-    position: absolute;
-    left: 1517px;
 }
 
 .header .login {
-    width: 150px;
-    height: 44px;
+    width: 120px;
+    height: 35px;
     background-color: #4C3527;
-    border-radius: 100px;
+    border-radius: 20px;
     color: #fff;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    left: 1590px;
+    font-size: 16px;
 }
 
 .line {

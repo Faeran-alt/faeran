@@ -1,0 +1,36 @@
+/* Общий стиль для страницы */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Контейнер для столбиков */
+.container {
+    display: flex;
+    justify-content: space-between; /* Равномерно распределяем столбики */
+    padding: 0 30px; /* Отступы слева и справа */
+    height: 100vh; /* Высота контейнера на весь экран */
+    align-items: center; /* Центрируем столбики по вертикали */
+}
+
+/* Общий стиль для всех столбиков */
+.column {
+    width: calc(20% - 8px); /* Ширина каждого столбика минус отступы */
+    height: 80%; /* Высота столбика */
+}
+
+/* Стиль для красных столбиков */
+.red {
+    background-color: red;
+}
+
+/* Стиль для желтых столбиков */
+.yellow {
+    background-color: yellow;
+}
+
+/* Добавляем отступы между столбиками */
+.column:not(:last-child) {
+    margin-right: 10px; /* Отступ между столбиками */
+}

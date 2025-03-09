@@ -1,22 +1,39 @@
-def create_multiplication_tables():
-    # Открываем файл для записи
-    with open('multiplication_tables.csv', 'w', encoding='utf-8') as file:
-        # Создаем таблицы умножения от 2 до 9
-        for number in range(2, 10):
-            # Записываем заголовок таблицы
-            file.write(f'таблица умножения на {number}\n')
-            
-            # Создаем заголовки столбцов
-            file.write('Пример,Результат\n')
-            
-            # Записываем примеры и результаты
-            for i in range(1, 11):
-                file.write(f'{number}*{i},{number * i}\n')
-            
-            # Добавляем пустые строки между таблицами
-            file.write('\n')
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton, QVBoxLayout, QWidget
+from PyQt5.QtCore import Qt
+import sys
+
+class MainWindow(QMainWindow):
+    def init(self):
+        super().init()
+        self.setWindowTitle("Маркевич Даниил Германович")  
+        self.setGeometry(100, 100, 400, 300)  # Размеры окна: x=100, y=100, ширина=400, высота=300
+        
+        central_widget = QWidget()
+        self.setCentralWidget(central_widget)
+        layout = QVBoxLayout(central_widget)
+        
+        # Создаем и добавляем метки с текстом
+        group_label = QLabel("Группа: ИБАС 24-11-2")  
+        age_label = QLabel("Возраст: 19")  
+        animal_label = QLabel("Моё любимое животное: Собака") 
+        characteristic_label = QLabel("Моя характеристика: миллионер, актёр, тиктокер, ютубер  ")  
+        
+        # Добавляем метки в layout
+        layout.addWidget(group_label)
+        layout.addWidget(age_label)
+        layout.addWidget(animal_label)
+        layout.addWidget(characteristic_label)  # Добавляем новую метку в layout
+        
+        # Создаем кнопку закрытия
+        close_button = QPushButton("Пока")
+        close_button.clicked.connect(self.close)
+        layout.addWidget(close_button)
+        
+        # Устанавливаем выравнивание по центру
+        layout.setAlignment(Qt.AlignCenter)
 
 if __name__ == '__main__':
-    create_multiplication_tables()
-    print("Таблицы умножения созданы в файле 'multiplication_tables.csv'")
-    print("Откройте файл в Excel для просмотра результатафцыувапр")
+    app = QApplication(sys.argv)
+    window = MainWindow()
+    window.show()
+    sys.exit(app.exec_())

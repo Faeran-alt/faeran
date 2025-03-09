@@ -1,0 +1,189 @@
+html, body {
+    height: 100%; /* Занимаем всю высоту экрана */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 0; /* Убираем внутренние отступы */
+    zoom: 90%; 
+}
+/* Основные стили */
+body {
+    margin: 0; /* Убирает внешние отступы у body */
+    padding: 10px; /* Добавляет внутренний отступ 10px */
+    background-image: url("image/win11.png"); /* Устанавливает фоновое изображение */
+    background-size: 100%; /* Растягиваем фон на весь экран */
+    background-position: center; /* Центрируем фон */
+    background-repeat: no-repeat; /* Запрещаем повторение фона */
+    background-attachment: fixed; /* Фиксируем фон (если нужно) */
+    font-family: Arial, sans-serif; /* Шрифт по умолчанию */
+    color: white;
+}
+
+/* Шапка */
+.header {
+    position: fixed; /* Фиксирует шапку на экране */
+    top: 20px; /* Отступ сверху 20px */
+    left: 0; /* Прижимает к левому краю */
+    right: 0; /* Прижимает к правому краю */
+    display: flex; /* Включает flex-контейнер */
+    justify-content: space-between; /* Распределяет элементы по ширине */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    padding: 0 20px; /* Добавляет внутренние отступы слева и справа */
+}
+
+
+
+
+
+.my-image {
+    width: 100%; /* Ширина изображения 100% */
+    height: auto; /* Высота изображения автоматическая */
+}
+/* Контейнер для плиток ОСНОВА САМОЕ НАЧАЛО СБОРНИК ДЕРЬМА */
+.tiles-container {
+    display: flex; /* Включает flex-контейнер */
+    justify-content: center; /* Центрирует содержимое по горизонтали */
+    gap: 50px; /* Расстояние между элементами 20px */
+    /*max-width: 1350px;  Максимальная ширина контейнера */
+    margin: auto; /* Внешние отступы: сверху 80px, по бокам автоматически */
+    margin-top: 100px;
+}
+.tiles-group {
+    display: flex; /* Включает flex-контейнер */
+    gap: 10px;/* Расстояние между элементами 5px */
+    
+}
+.tiles-group.vertical {
+    flex-direction: column; /* Располагает элементы вертикально */
+    width: 250px; /* Ширина группы 280px */
+    gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+}
+.tiles-group.grid {
+    display: grid; /* Включает grid-контейнер */
+    grid-template-columns: repeat(2, 1fr); /* Два столбца равной ширины */
+    gap: 10px; /* Расстояние между элементами 10px */
+    width: 250px; /* Ширина группы 210px */
+    
+}
+.tile {
+    background-color: #e74c3c; /* Цвет фона плитки */
+    overflow: hidden; /* Скрывает содержимое, выходящее за границы */
+    position: relative; /* Относительное позиционирование */
+    gap: 10px;
+    
+}
+
+.tile.large {
+    height: 250px; /* Высота большой плитки */
+    width: 250px; /* Ширина большой плитки */
+}
+
+.tile.medium {
+    height: 125px; /* Высота средней плитки */
+    width: 250px; /* Ширина средней плитки */
+}
+
+.tile.small {
+    width: 120px; /* Ширина маленькой плитки */
+    height: 120px; /* Высота маленькой плитки */
+}
+.tiles-group.special-grid {
+    display: flex; /* Включаем flex-контейнер */
+    flex-direction: column; /* Элементы располагаются вертикально */
+    gap: 10px; /* Отступы между элементами */
+    width: 250px; /* Ширина контейнера */
+}
+
+.tiles-group.special-grid .tile.medium {
+    width: 100%; /* Занимает всю ширину контейнера */
+    height: 125px; /* Высота средней плитки */
+    background-color: #e74c3c; /* Цвет фона для наглядности */
+}
+
+.tiles-group.special-grid .small-row {
+    display: flex; /* Включаем flex-контейнер для строки с small плитками */
+    gap: 10px; /* Отступы между small плитками */
+}
+
+.tiles-group.special-grid .small-row .tile.small {
+    flex: 1; /* Равномерное распределение ширины */
+    height: 120px; /* Высота маленькой плитки */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.start-text {
+    position: fixed;
+    top: 20px;
+    left: 211px;
+    color: white;
+    font-size: 40px;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.start-2text {
+    position: fixed;
+    top: 20px;
+    left: 1537px;
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.block {
+    width: 25px; /* Ширина блока 25px */
+    height: 25px; /* Высота блока 25px */
+    background-color: #e74c3c; /* Цвет фона блока */
+    position: relative; left: 1627px;top: 10px;
+}
+
+.block:hover {
+    background: orange; /* Цвет фона при наведении */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tile-title {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: left;
+}

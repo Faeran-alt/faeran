@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 40px; /* Отступ от краев */
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;
+}
+
+.column {
+    width: 305px; /* Ширина колонки с учетом отступов */
+    background-color: #ff0000; /* Цвет по умолчанию */
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Расстояние между фигурами */
+}
+
+.column:nth-child(1) {
+    background-color: #ff5733; /* Оранжевый */
+}
+
+.column:nth-child(2) {
+    background-color: #33ff57; /* Зеленый */
+}
+
+.column:nth-child(3) {
+    background-color: #3357ff; /* Синий */
+}
+
+.column:nth-child(4) {
+    background-color: #ff33a1; /* Розовый */
+}
+
+.column:nth-child(5) {
+    background-color: #a133ff; /* Фиолетовый */
+}
+
+.column:not(:last-child) {
+    margin-right: 20px; /* Отступ между колонками */
+}
+
+/* Стили для фигур */
+.shape {
+    background-color: #ccc; /* Цвет по умолчанию */
+}
+
+.large {
+    width: 300px;
+    height: 300px;
+    background-color: #ffcc00; /* Желтый */
+}
+
+.medium {
+    width: 300px;
+    height: 150px;
+    background-color: #00ccff; /* Голубой */
+}
+
+.small {
+    width: 150px;
+    height: 150px;
+    background-color: #cc00ff; /* Пурпурный */
+}

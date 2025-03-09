@@ -1,138 +1,23 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Задание html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-<style> /* решил вам глазки сохранить*/
-    body {
-        background-color: gray;
-        color: white; 
-    }
-</style>
-<FONT size="50"><p align= "center">СТРАНИЦА 162. Здание 1(п.2-8). Форматирование</p> </FONT> <br>
-<FONT color="#000000">Форматировать текст - это значит придавать ему форму, оформлять.</FONT> <br>
-<FONT color="#ff0000">Форматировать текст - это значит придавать ему форму, оформлять.</FONT> <br>
-<b><t><FONT color="#9c8011" size="4">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></t></b><br>
-<i><tt><FONT color="#00cccc" size="4">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></t></i>
-<i><p align="center"><FONT color="#00b300" size="4" face="Arial">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></i>
-<i><p align="center"><FONT color="#ffff00" size="4" face="Arial">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></i>
-<i><b><p align="right"><FONT color="#66ffff" size="4" face="Arial">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></b></i>
-<i><b><p align="right"><FONT color="#0000ff" size="4" face="Arial">Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></b></i>
-<b><p align="right"><FONT color="#ff0000" size="5" face="Arial"><u>Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></b></u>
-<b><p align="right"><FONT color="#008000" size="5" face="Arial"><u>Форматировать текст - это значит придавать ему форму, оформлять.</FONT></p></b></u>
-
-<marquee behavior="alternate" direction="right"><FONT size="7" face="Arial"><B><FONT color="#FF0000">Каждый <FONT color="#FF7F00">охотник <FONT color="#FFFF00">желает <FONT color="#00FF00">знать, <FONT color="42aaff">где <FONT color="0000FF">сидит <FONT color="9400D3">фазан.</FONT></B></marquee>
 <body>
-<table border="1">
-    <tr>
+    <div class="container">
+        <span class="text"> Понедельник</span>
+        <span class="text"> Вторник</span>
+        <span class="text"> Среда</span>
+        <span class="text"> Четверг</span>
+        <span class="text" id="prazdnik">Пятница</span>
+        <span class="vihonoy"> Суббота</span>
+        <span class="vihonoy"> Воскресенье</span>
+        
 
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-    </tr>
-    <tr>
-        <td>Ячейка </td>
-        <td rowspan="2" colspan="2">Ячейка</td>
-        <td>Ячейка </td>
-    </tr>
-    <tr>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-    </tr>
-    <tr>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-        <td>Ячейка </td>
-    </tr>
-</table>
 
-<form action="/" style="border: 2px solid black; padding: 10px; display: inline-block;">
-    <div>Пример формы:</div>
-    <div>
-        <span>Логин: </span>
-        <input type="text">
     </div>
-    <div>
-        <span>Пароль:</span>
-        <input type="password">
-    </div>
-    <div>
-        <input type="submit" value="Отправить">
-    </div>
-</form>
-
-<body>
-    <h2>&lt;input type=""""&gt;</h2>
-    <table>
-        <tr>
-            <th>Тип</th>
-            <th>Описание</th>
-            <th>Вид</th>
-        </tr>
-        <tr>
-            <td>button</td>
-            <td>Кнопка</td>
-            <td><button>Кнопка</button></td>
-        </tr>
-        <tr>
-            <td>checkbox</td>
-            <td>Флажки. Позволяют выбрать более одного варианта из предложенных</td>
-            <td>
-                <label><input type="checkbox" name="option1"> Плитка</label>
-                <label><input type="checkbox" name="option2"> Чай</label>
-                <label><input type="checkbox" name="option3"> Кофе</label>
-            </td>
-        </tr>
-        <tr>
-            <td>file</td>
-            <td>Поле для ввода имени файла, который пересылается на сервер</td>
-            <td><input type="file"></td>
-        </tr>
-        <tr>
-            <td>hidden</td>
-            <td>Скрытое поле. Оно никак не отображается на веб-странице</td>
-            <td><input type="hidden"></td>
-        </tr>
-        <tr>
-            <td>image</td>
-            <td>Поле с изображением. При нажатии на рисунок данные формы отправляются на сервер</td>
-            <td><input type="image" src="https://via.placeholder.com/100" alt="Отправить"></td>
-        </tr>
-        <tr>
-            <td>password</td>
-            <td>Обычное текстовое поле, но отличается от него тем, что все символы показываются звездочками. Предназначено для того, чтобы никто не подглядел вводимый пароль</td>
-            <td><input type="password"></td>
-        </tr>
-        <tr>
-            <td>radio</td>
-            <td>Переключатели. Используются, когда следует выбрать один вариант из нескольких предложенных</td>
-            <td>
-                <label><input type="radio" name="option" value="1"> Плитка</label>
-                <label><input type="radio" name="option" value="2"> Чай</label>
-                <label><input type="radio" name="option" value="3"> Кофе</label>
-            </td>
-        </tr>
-        <tr>
-            <td>reset</td>
-            <td>Кнопка для возвращения данных формы в первоначальное значение</td>
-            <td><input type="reset" value="Сбросить"></td>
-        </tr>
-        <tr>
-            <td>submit</td>
-            <td>Кнопка для отправки данных формы на сервер</td>
-            <td><input type="submit" value="Отправить"></td>
-        </tr>
-        <tr>
-            <td>text</td>
-            <td>Текстовое поле. Предназначено для ввода символов с помощью клавиатуры</td>
-            <td><input type="text"></td>
-        </tr>
-    </table>
-
 </body>
 </html>
-
-
